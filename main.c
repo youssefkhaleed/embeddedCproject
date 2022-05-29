@@ -103,7 +103,7 @@ switches();
         if(temp0=='y')                  // checking if switch1 is pressed
     {
       LCD4bits_Cmd(0x01);         //  if pressed then clear the lcd 
-      goto Again;                 // then goto idle and wait for a new input
+      goto Again;                 // then goto again and wait for a new input
    }
     delay_ms(200);               // wait for 200 milliseconds
     cursor_decrement(1);         // shifting cursor to the left
@@ -113,7 +113,7 @@ switches();
     if(temp1=='y')              // checking if switch1 is pressed
    {          
     LCD4bits_Cmd(0x01);        // if pressed then clear the lcd 
-    goto Again;                 // then goto idle and wait for a new input
+    goto Again;                 // then goto again and wait for a new input
    }
    delay_ms(200);                // wait for 200 milliseconds
   cursor_decrement(2);          // shifting the cursor 2 spaces to the left
@@ -124,7 +124,7 @@ switches();
    if(temp2=='y')                // checking if switch1 is pressed
    {
    LCD4bits_Cmd(0x01);         // if pressed then clear the lcd 
-   goto Again;                   // then goto idle and wait for a new input
+   goto Again;                   // then goto again and wait for a new input
   } 
   delay_ms(200);                // wait for 200 milliseconds
   cursor_decrement(4);           // shifting the cursor 4 spaces to the left
@@ -137,7 +137,7 @@ switches();
   if(temp3=='y')                   // checking if switch1 is pressed
   {
    LCD4bits_Cmd(0x01);            // if pressed then clear the lcd 
-  goto Again;                    // then goto idle and wait for a new input
+  goto Again;                    // then goto again and wait for a new input
   }
 delay_ms(200);                    // wait for 200 milliseconds
 cursor_decrement(5);               // shifting the cursor 5 spaces to the left
